@@ -1,0 +1,16 @@
+package com.simplilearn.workshop.repository;
+
+import java.util.List;
+
+import com.simplilearn.workshop.model.Customer;
+
+public class InMemoryCustomerRepositoryImpl implements CustomerRepository {
+
+	private static List<Customer> customers_list = new ArrayList<Customer>();
+	@Override
+	public List<Customer> findAll() {
+		
+		return null;
+	}
+
+}
