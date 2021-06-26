@@ -11,8 +11,18 @@ public class CustomerServiceImpl implements CustomerService {
 	// depends on customer repository
 	private CustomerRepository customerRepository ;
 	
+	public CustomerServiceImpl() {
+		super();
+	}
+
+	//Parameterized constructor
+	public CustomerServiceImpl(CustomerRepository customerRepository) {
+		System.out.println("spring called constructor method to inject a bean 'customerReposiory'");
+		this.customerRepository = customerRepository;
+	}
 	//added a set customer repository
 	public void setCustomerRepository(CustomerRepository customerRepository) {
+		System.out.println("spring called setter method to inject a bean 'customerReposiory'");
 		this.customerRepository = customerRepository;
 	}
 	@Override
