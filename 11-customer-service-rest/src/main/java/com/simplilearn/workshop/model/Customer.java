@@ -1,10 +1,20 @@
 package com.simplilearn.workshop.model;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class Customer {
 	
 	private Integer id;
+	
+	@NotNull @Size (min = 2, message = "first name should have atleast 2 characters")
 	private String firstName;
+	@NotNull @Size (min = 2, message = "last name should have atleast 2 characters")
 	private String lastName;
+	
+	@NotEmpty @Email(message = "email is a required field")
 	private String email;
 	
 	public Customer(Integer id, String firstName, String lastName, String email) {

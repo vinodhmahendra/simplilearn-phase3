@@ -16,9 +16,9 @@ public class CutomerRepositoryImpl implements CustomerRepository {
 	private static Integer customerCount  = 3;
 	// Add three customers
 	static {
-		customers_list.add(new Customer(101, "vinodh", "vinodh@pivotal.com", "123-5555"));
-		customers_list.add(new Customer(102, "bhavya", "bhavya@collins.com", "222-88888"));
-		customers_list.add(new Customer(103, "samarth", "samarth@google.com", "444-55555"));
+		customers_list.add(new Customer(101, "vinodh", "mahendra", "vinodh@pivotal.io"));
+		customers_list.add(new Customer(102, "bhavya", "vinodh", "bhavya@collins.com"));
+		customers_list.add(new Customer(103, "samarth", "vishnu", "smarth.vishnu@gmail.com"));
 
 	}
 
